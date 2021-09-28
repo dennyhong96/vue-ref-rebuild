@@ -1,0 +1,52 @@
+{
+  "name": "section-5-vue-dev-env",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "watch": "webpack --watch",
+    "build": "NODE_ENV=production webpack",
+    "build:dev": "webpack",
+    "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx,mdx,css,scss,md}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,json,ts,tsx,mdx,css,scss,md}\"",
+    "lint": "eslint ./src",
+    "test": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.15.6",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/core-js": "^2.5.5",
+    "@types/jest": "^27.0.2",
+    "@types/regenerator-runtime": "^0.13.1",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.3.0",
+    "eslint": "^7.32.0",
+    "html-webpack-plugin": "^5.3.2",
+    "jest": "^27.2.3",
+    "mini-css-extract-plugin": "^2.3.0",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.3.6",
+    "postcss-loader": "^6.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.4.1",
+    "sass": "^1.42.0",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.1"
+  },
+  "dependencies": {
+    "core-js": "^3.18.0",
+    "regenerator-runtime": "^0.13.9"
+  }
+}
